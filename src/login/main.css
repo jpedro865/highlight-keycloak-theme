@@ -38,6 +38,7 @@
     border-radius: 8px;
     border: 1px solid rgba(173, 83, 137, 0.3);
     box-shadow: 0 0 20px rgba(173, 83, 137, 0.1), inset 0 0 10px rgba(173, 83, 137, 0.05);
+    box-sizing: border-box;
 }
 .kcInputClass {
     border: 1px solid rgba(173, 83, 137, 0.5) !important;
@@ -51,11 +52,17 @@
 
 .kcInputGroup{
     background: transparent !important;
+    position: relative !important;
 }
 
 .kcFormPasswordVisibilityButtonClass  {
     background: transparent !important;
     color: white !important;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999 !important;
 }
 .kcFormPasswordVisibilityButtonClass::after  {
     border: none;
