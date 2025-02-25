@@ -61,7 +61,32 @@
     border: none;
 }
 
-#social-google {
-    background: linear-gradient(45deg, #FFD700, #FFA500) !important;
+.kcFormSocialAccountListButtonClass {
+    background: rgba(255, 255, 255, 0.03) !important;
     color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.kcFormSocialAccountListButtonClass:hover {
+    background: rgba(255, 255, 255, 0.06) !important;
+    transform: translateX(5px) scale(1.02);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    animation: glowing 2s infinite ease-in-out;
+}
+
+.kcFormSocialAccountListButtonClass::after {
+    border: none !important;
+}
+
+@keyframes glowing {
+    0% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.1); }
+    50% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); }
+    100% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.1); }
+}
+
+.kcFormSocialAccountSectionClass {
+    font-size: small;
+    color: #72767b;
 }
