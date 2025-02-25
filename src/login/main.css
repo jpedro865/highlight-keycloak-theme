@@ -40,6 +40,13 @@
     box-shadow: 0 0 20px rgba(173, 83, 137, 0.1), inset 0 0 10px rgba(173, 83, 137, 0.05);
     box-sizing: border-box;
 }
+
+.kcInputClass[aria-invalid="true"] {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.05) 100%);
+    border: 1px solid rgba(255, 0, 0, 0.5) !important;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3), inset 0 0 10px rgba(255, 0, 0, 0.1);
+}
+
 .kcInputClass {
     border: 1px solid rgba(173, 83, 137, 0.5) !important;
     box-shadow: 0 0 20px rgba(173, 83, 137, 0.3), inset 0 0 10px rgba(173, 83, 137, 0.1);
