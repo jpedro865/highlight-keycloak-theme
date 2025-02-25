@@ -1,0 +1,67 @@
+.kcLoginClass {
+    width: 100%;
+    background: linear-gradient(125deg, #8021C8 -10%, #6B21A8 15%, #581C87 30%, #3B1667 50%, #1F1544 75%);
+    color: white;
+    overflow: auto;
+}
+
+.kcLeftImage {
+    background-color: "purple";
+    width: "30%";
+}
+
+.kcHeaderWrapperClass {
+    /* display: none; */
+}
+
+.kcFormCardClass {
+    background: linear-gradient(135deg, rgba(20, 20, 30, 0.95), rgba(30, 30, 45, 0.9));
+    backdrop-filter: blur(20px);
+    border: 0;
+    border-radius: 12px;
+}
+
+.kcInfoAreaWrapperClass {
+    background-color: transparent !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.kcButtonClass {
+    background: linear-gradient(45deg, #FFD700, #FFA500) !important;
+    color: white !important;
+}
+
+.kcInputClass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.05) 100%);
+    backdrop-filter: blur(10px);
+    color: white;
+    border-radius: 8px;
+    border: 1px solid rgba(173, 83, 137, 0.3);
+    box-shadow: 0 0 20px rgba(173, 83, 137, 0.1), inset 0 0 10px rgba(173, 83, 137, 0.05);
+}
+.kcInputClass {
+    border: 1px solid rgba(173, 83, 137, 0.5) !important;
+    box-shadow: 0 0 20px rgba(173, 83, 137, 0.3), inset 0 0 10px rgba(173, 83, 137, 0.1);
+}
+
+.kcInputClass:focus {
+    border: 1px solid rgba(173, 83, 137, 0.5) !important;
+    box-shadow: 0 0 20px rgba(173, 83, 137, 0.3), inset 0 0 10px rgba(173, 83, 137, 0.1);
+}
+
+.kcInputGroup{
+    background: transparent !important;
+}
+
+.kcFormPasswordVisibilityButtonClass  {
+    background: transparent !important;
+    color: white !important;
+}
+.kcFormPasswordVisibilityButtonClass::after  {
+    border: none;
+}
+
+#social-google {
+    background: linear-gradient(45deg, #FFD700, #FFA500) !important;
+    color: white !important;
+}

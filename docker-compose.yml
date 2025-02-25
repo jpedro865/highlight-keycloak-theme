@@ -1,0 +1,21 @@
+services:
+  keycloak-theme:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: keycloak-theme
+    container_name: keycloak-theme
+    ports:
+      - "6006:6006"
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+
+volumes:
+  node_modules:
+    name: keycloak-theme-node_modules
+    driver: local
+    driver_opts:
+      type: none
+      device: ${PWD}/node_modules
+      o: bind
